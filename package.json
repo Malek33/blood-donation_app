@@ -7,8 +7,8 @@
         "node": "16.15.0"
       },
     "scripts": {
-        "start": "server.js",
-        "back": "server.js",
+        "start": "node server",
+        "back": "node server",
         "front": " cd client && npm start",
         "dev": "concurrently  \"npm run back\" \"npm run front \""
     },
