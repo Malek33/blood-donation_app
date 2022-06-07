@@ -13,7 +13,7 @@ const isAuthUser = async (req, res, next) => {
         }
         // si token existe
         // on doit verifier si le token valide
-        const decoded = jwt.verify(token, process.env.SECRET_KEY);
+        const decoded = jwt.verify(token, "bHo2uSC2wD");
         const user = await User.findOne({ _id: decoded.id });
         if (!user) {
             return res

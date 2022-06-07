@@ -4,7 +4,7 @@ const Donor = require("../models/Donor");
 const isAuthAdmin = async (req, res, next) => {
     try {
         const token = req.headers["authorization"];
-        const decoded = jwt.verify(token, process.env.SECRET_KEY);
+        const decoded = jwt.verify(token, "bHo2uSC2wD");
         const donor = await Donor.findById(decoded.id);
         if (!donor) {
             return res.status(401).send({ message: "not authorized" });
