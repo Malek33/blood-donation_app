@@ -43,7 +43,7 @@ exports.getAllPubs = async(req, res) => {
 exports.getBlood = async(req, res) => {
     try {
         const token = req.headers["authorization"];
-        const decoded = jwt.verify(token, process.env.SECRET_KEY);
+        const decoded = jwt.verify(token, "bHo2uSC2wD");
         console.log(decoded)
         const user = await Donor.find({ _id: decoded.id })
         const allPubsBloodGroup = await Pub.find({ bloodGroup: user[0].bloodGroup, approved: req.body.approved = true })

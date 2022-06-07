@@ -15,7 +15,7 @@ exports.Register = async (req, res) => {
         const hashedPassword = await bcrypt.hash(password, saltRounds);
         newUser.password = hashedPassword;
         await newUser.save();
-        const token = jwt.sign({ id: newUser._id }, process.env.SECRET_KEY, {
+        const token = jwt.sign({ id: newUser._id }, "bHo2uSC2wD", {
             expiresIn: "7d",
         });
         res.status(200).send({ message: "user created succ", newUser, token });
@@ -35,7 +35,7 @@ exports.Login = async (req, res) => {
         if (!comparePass) {
             return res.status(400).send({ message: "wrong password" });
         }
-        const token = jwt.sign({ id: findUser._id }, process.env.SECRET_KEY, {
+        const token = jwt.sign({ id: findUser._id }, "bHo2uSC2wD", {
             expiresIn: "7d",
         });
         res.status(200).send({ message: "login succ", findUser, token });
