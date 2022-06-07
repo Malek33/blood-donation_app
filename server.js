@@ -7,8 +7,6 @@ const pubRoutes = require("./routes/pub");
 var cors = require("cors");
 // instanciation
 const app = express();
-app.use(cors());
-require("dotenv").config();
 app.use(express.json());
 connectDB();
 app.use("/api/user", patientRoutes);
