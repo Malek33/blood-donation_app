@@ -14,7 +14,7 @@ app.use("/api/user", patientRoutes);
 app.use("/api/donor", donorRoutes);
 app.use("/api/pub", pubRoutes);
 
-PORT = process.env.PORT || 5000;
-app.listen(PORT, (err) => {
+PORT = 5000;
+app.listen(process.env.PORT || PORT, (err) => {
     err ? console.log(err) : console.log(`server is running on ${PORT}`);
 });
