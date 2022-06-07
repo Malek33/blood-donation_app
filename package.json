@@ -1,0 +1,35 @@
+{
+    "name": "ws-auth-pt",
+    "version": "1.0.0",
+    "description": "app gomycode",
+    "main": "server.js",
+    "scripts": {
+        "start": "nodemon server",
+        "back": "nodemon server",
+        "front": " cd client && npm start",
+        "dev": "concurrently  \"npm run back\" \"npm run front \""
+    },
+    "keywords": [
+        "express",
+        "mongoose",
+        "mongodb",
+        "atlas"
+    ],
+    "author": "Malek Maghraoui",
+    "license": "ISC",
+    "dependencies": {
+        "bcrypt": "^5.0.1",
+        "bootstrap": "^5.1.3",
+        "concurrently": "^7.0.0",
+        "cors": "^2.8.5",
+        "express": "^4.17.2",
+        "express-validator": "^6.14.0",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^6.1.7",
+        "react-bootstrap": "^2.1.1"
+    },
+    "devDependencies": {
+        "dotenv": "^14.2.0",
+        "nodemon": "^2.0.16"
+    }
+}

@@ -1,0 +1,44 @@
+// donor
+{
+    "name": "faysel fsala",
+    "email": "faysel@faysoul.com",
+    "password": "la7nina",
+    "bloodGroup": "O-",
+    "medicalReport": "Bad health",
+    "phone": 94181481
+}
+
+// user
+{
+    "name": "Malek",
+    "email": "malek.magraoui333@gmail.com",
+    "password": "barguewi11",
+    "role": "user",
+    "phone": 94181481
+}
+
+// pub
+{
+    "name": "faysel",
+    "bloodGroup": "O positif",
+    "medicalReport": "bad health",
+    "email": "faysel@faysoul.com",
+    "phone": 94181481,
+    "descreption": "LA7NINA FEL GALB"
+}
+
+MONGO_URI =""
+PORT = 0000
+SECRET_KEY = ""
+
+
+// donor
+{
+    "name":"malek",
+    "email": "malek.admin@gmail.com",
+    "password": "malekadmin",
+    "bloodGroup": "O+",
+    "medicalReport": "nothing",
+    "phone": 94181481,
+    "role": "admin"
+}
