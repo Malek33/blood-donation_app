@@ -4,7 +4,7 @@
     "description": "app gomycode",
     "main": "server.js",
     "engines": {
-        "node": "6.11.1"
+        "node": "16.15.0"
       },
     "scripts": {
         "start": "nodemon server",
